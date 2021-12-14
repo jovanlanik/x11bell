@@ -1,0 +1,4 @@
+/.cache/
+/x11bell
+compile_commands.json
+*.o
