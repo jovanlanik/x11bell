@@ -7,6 +7,8 @@
 #include <X11/XKBlib.h>
 
 int main(int argc, char *argv[]) {
+	if(argc < 2) exit(EXIT_FAILURE);
+
 	Display *display = XOpenDisplay(NULL);
 	if(!display) exit(EXIT_FAILURE);
 
@@ -36,7 +38,7 @@ int main(int argc, char *argv[]) {
 		if(((XkbEvent *)&event)->any.xkb_type != XkbBellNotify) continue;
 		pid_t pid = fork();
 		if(pid == -1) exit(EXIT_FAILURE);
-		else if(pid == 0 && argc > 1) {
+		else if(pid == 0) {
 			execvp(argv[1], &argv[1]);
 			exit(EXIT_FAILURE);
 		}
