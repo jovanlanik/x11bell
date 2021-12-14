@@ -1,5 +1,5 @@
 # X11 Bell
-A simple replacment for the `x11-bell` pulseaudio module.
+A simple replacement for the `x11-bell` pulseaudio module.
 ## Usage
 `x11bell <command> [<args>]`
 ### Examples
