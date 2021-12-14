@@ -1,5 +1,5 @@
 # X11 Bell
-# Copyright (c) 2020 Jovan Lanik
+# Copyright (c) 2021 Jovan Lanik
 
 # Makefile
 
